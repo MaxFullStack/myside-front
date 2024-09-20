@@ -18,7 +18,7 @@ interface IProductCardDetailsProps {
 const ProductCardDetails  = ({ product }: IProductCardDetailsProps) => {
   return (
     <ProductContainer>
-     <StyledImage src={product.image} alt={product.title} width={500} height={500} />
+     <StyledImage src={product.image} alt={product.title} width={300} height={300} />
       <DetailsContainer>
         <Title>{product.title}</Title>
         <Price>R$ {product.price.toFixed(2)}</Price>

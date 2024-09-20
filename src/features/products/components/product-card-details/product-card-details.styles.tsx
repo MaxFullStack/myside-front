@@ -21,16 +21,22 @@ export const ProductContainer = styled.div`
 `;
 
 export const StyledImage = styled(Image)`
-  width: 66.6%;
+  width: 100%; 
+  max-width: 500px;  
+  max-height: 300px; 
   object-fit: contain;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 350px; 
+  }
 `;
 
 export const DetailsContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 10px;
 `;
 
