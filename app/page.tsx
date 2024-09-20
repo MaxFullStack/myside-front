@@ -1,10 +1,10 @@
 "use client"
 
+import Link from 'next/link';
 import { Container, Main } from '@/shared/components/layout';
 import { Title, Description, SectionTitle, List, ListItem } from '@/shared/components/typography';
-import Link from 'next/link';
 
-export default function Home() {
+const HomePage = () => {
   return (
     <Container>
       <Main>
@@ -39,3 +39,5 @@ export default function Home() {
     </Container>
   );
 }
+
+export default HomePage
