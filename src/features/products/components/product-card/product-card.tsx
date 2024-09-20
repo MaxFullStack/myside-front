@@ -23,7 +23,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         alt={product.title}
         width={200}
         height={200}
-        objectFit="contain"
+        style={{ objectFit: 'contain' }} 
       />
       <CardContent>
         <ProductTitle>{product.title}</ProductTitle>
@@ -31,7 +31,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <Description>{product.description}</Description>
       </CardContent>
       <CardFooter>
-        <Link href={`/produtos/${product.id}`} passHref>
+        <Link href={`/produtos/${product.id}`} legacyBehavior passHref>
           <DetailsButton as="a">Ver detalhes</DetailsButton>
         </Link>
       </CardFooter>
