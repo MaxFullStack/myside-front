@@ -23,7 +23,7 @@ const ProductCardDetails  = ({ product }: IProductCardDetailsProps) => {
         <Title>{product.title}</Title>
         <Price>R$ {product.price.toFixed(2)}</Price>
         <Rating>
-          Avaliação: {product.rating.rate} ({product.rating.count} avaliações)
+          Avaliação: {product?.rating?.rate} ({product?.rating?.count} avaliações)
         </Rating>
         <Description>{product.description}</Description>
 
