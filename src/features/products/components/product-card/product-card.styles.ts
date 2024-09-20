@@ -9,10 +9,14 @@ export const Card = styled.div`
   border-radius: 8px;
   background-color: white;
   width: 100%;
-  max-width: 350px;
-  height: 100%;
+  max-width: 280px;
+  min-height: 180px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    max-width: 350px;
+  }
 `;
 
 export const StyledImage = styled(Image)`
@@ -41,12 +45,12 @@ export const Price = styled.p`
   font-size: 1.2rem;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.primary};
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 `;
 
 export const Description = styled.p`
   font-size: 0.85rem;
-  color: #777;
+  color: #636363;
   line-height: 1.2;
   margin-bottom: 10px;
   max-height: 40px;

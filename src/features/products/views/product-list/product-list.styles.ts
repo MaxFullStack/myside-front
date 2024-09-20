@@ -17,13 +17,29 @@ export const FilterContainer = styled.div`
 `;
 
 export const ProductGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  justify-items: center;
+  justify-content: center;
   padding: 20px 0;
   width: 100%;
+
+  & > div {
+    flex: 1 1 calc(100% / 3 - 40px);
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 768px) {
+    & > div {
+      flex: 1 1 100%;
+    }
+  }
 `;
+
+
 
 export const SearchBar = styled.input`
   padding: 10px;
