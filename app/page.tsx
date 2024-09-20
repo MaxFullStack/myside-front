@@ -33,7 +33,7 @@ const HomePage = () => {
 
         <SectionTitle>Repositório no GitHub:</SectionTitle>
         <Description>
-          Acesse o código-fonte aqui: <Link href="#" target="_blank" rel="noopener noreferrer">Link para o repositório</Link>
+          Acesse o código-fonte aqui: <Link href="https://github.com/MaxFullStack/myside-front" target="_blank" rel="noopener noreferrer">https://github.com/MaxFullStack/myside-front</Link>
         </Description>
       </Main>
     </Container>
