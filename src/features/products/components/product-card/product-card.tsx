@@ -31,7 +31,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <Description>{product.description}</Description>
       </CardContent>
       <CardFooter>
-        <Link href={`/products/${product.id}`} passHref>
+        <Link href={`/produtos/${product.id}`} passHref>
           <DetailsButton as="a">Ver detalhes</DetailsButton>
         </Link>
       </CardFooter>
