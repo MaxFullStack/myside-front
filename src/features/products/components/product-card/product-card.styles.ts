@@ -12,6 +12,7 @@ export const Card = styled.div`
   max-width: 350px;
   height: 100%;
   overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 `;
 
 export const StyledImage = styled(Image)`
